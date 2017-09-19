@@ -5,6 +5,7 @@ $(document).ready(function(){
   let photo2 = document.getElementById('box4');
   let points = document.getElementById('box5');
   let counter = 0;
+  let prize = document.getElementById('box8');
   $(points).append(' ' + counter);
 /*Here is what you would use if pulling from an actual API. Replace console.log(data) with what actual data you'd like and where to append it.
 $.get((''), function(data){
@@ -32,10 +33,14 @@ $.get((''), function(data){
     if(US.MidwestRegion[tally+1]){
     $("#box4").prepend(US.MidwestRegion[tally+1].photo);
 
-    prompt("Enter the name: ");
-      tally++;
+    var answer = prompt("Enter the name: ");
+    console.log(answer);
+
+    if(answer===US.MidwestRegion[tally].name){
+
       counter++;
-      $(points).text('Points: ' + counter);
+      $(points).text('Points: ' + counter);}
+      tally++;
     } else {
       tally = 0;
       $("#box4").prepend(US.MidwestRegion[tally+1].photo);
@@ -45,5 +50,14 @@ $.get((''), function(data){
     }
   })
 
-
+$('#button3').on('click', function(){
+  $(prize).empty();
+  if(counter<10){
+    $(prize).text('Sorry, you need 10 points.');
+  } else {
+    var x = Math.floor(counter/10);
+    $(prize).text('You earned ' + x + ' raffle tickets.')
+  }
+  counter=counter%10;
+})
   })

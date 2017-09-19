@@ -31,6 +31,9 @@ h2 {
 #button2{
   background-color: white;
 }
+#button3{
+  background-color: white;
+}
 #box4{
   float:left;
   display: inline-block;
@@ -43,4 +46,9 @@ h2 {
 #box6{
   float: center;
   border: 0px;
+}
+#box8{
+  border: 1px solid black;
+  float: right;
+  display:inline-block;
 }
