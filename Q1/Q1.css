@@ -1,0 +1,46 @@
+* {
+  background-color: #40E0D0;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.box{
+
+  width: 45%;
+  display: inline-block;
+}
+#box1{
+  float:left;
+  display: inline-block;
+}
+#box2{
+  border: 1px solid black;
+  float: right;
+  display: inline-block;
+}
+#box3{
+  float: center;
+  border: 0px;
+}
+#button{
+  background-color: white;
+}
+#button2{
+  background-color: white;
+}
+#box4{
+  float:left;
+  display: inline-block;
+}
+#box5{
+  border: 1px solid black;
+  float: right;
+  display: inline-block;
+}
+#box6{
+  float: center;
+  border: 0px;
+}
