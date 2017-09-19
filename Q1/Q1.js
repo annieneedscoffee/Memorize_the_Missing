@@ -56,8 +56,14 @@ $('#button3').on('click', function(){
     $(prize).text('Sorry, you need 10 points.');
   } else {
     var x = Math.floor(counter/10);
-    $(prize).text('You earned ' + x + ' raffle tickets.')
+    var random = Math.floor(Math.random()*1000000);
+    var arr = [];
+    for(i=0;i<x;i++){
+      arr.push(random);
+    }
+    $(prize).text('You earned ' + x + ' raffle tickets. Here are your ticket numbers: '+ arr);
   }
   counter=counter%10;
 })
   })
+/* Goals left to complete: need to generate different random number each time. Need to provide way to store proof of ticket numbers*/
