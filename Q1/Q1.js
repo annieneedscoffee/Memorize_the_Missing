@@ -11,6 +11,8 @@ $(document).ready(function(){
 $.get((''), function(data){
   console.log(data);
 })*/
+
+
   let index = 0;
   $('#button').on('click', function(){
     $("#box1").empty();
@@ -70,4 +72,4 @@ $('#button3').on('click', function(){
   counter=counter%10;
 })
   })
-/* Goals left to complete: Need to provide way to store proof of ticket numbers. Use a front end framework. Connect to external API. Be deployed to a production environment.*/
+/* Goals left to complete: Need to provide way to store proof of ticket numbers. Use a front end framework- cyan accent-2, cyan lighten-2, or teal accent-2. Connect to external API. Be deployed to a production environment.*/
