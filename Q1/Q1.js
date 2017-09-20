@@ -33,7 +33,7 @@ $.get((''), function(data){
     if(US.MidwestRegion[tally+1]){
     $("#box4").prepend(US.MidwestRegion[tally+1].photo);
 
-    var answer = prompt("Enter the name: ");
+    var answer = prompt("Enter the name for each picture shown. Click ok to submit your answer and get a new picture, then click next for a new answer field.");
     console.log(answer);
 
     if(answer===US.MidwestRegion[tally].name){
@@ -45,10 +45,15 @@ $.get((''), function(data){
       tally = 0;
       $("#box4").prepend(US.MidwestRegion[tally+1].photo);
 
-      prompt("Enter the name: ");
+      alert("Click ok to go through the deck of flash cards again.");
         tally++;
     }
   })
+
+  function random(){
+   return Math.floor(Math.random()*10000000000);
+
+  }
 
 $('#button3').on('click', function(){
   $(prize).empty();
@@ -56,14 +61,13 @@ $('#button3').on('click', function(){
     $(prize).text('Sorry, you need 10 points.');
   } else {
     var x = Math.floor(counter/10);
-    var random = Math.floor(Math.random()*1000000);
     var arr = [];
     for(i=0;i<x;i++){
-      arr.push(random);
+      arr.push(' '+random());
     }
     $(prize).text('You earned ' + x + ' raffle tickets. Here are your ticket numbers: '+ arr);
   }
   counter=counter%10;
 })
   })
-/* Goals left to complete: need to generate different random number each time. Need to provide way to store proof of ticket numbers*/
+/* Goals left to complete: Need to provide way to store proof of ticket numbers. Use a front end framework. Connect to external API. Be deployed to a production environment.*/
