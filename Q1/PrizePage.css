@@ -1,0 +1,17 @@
+.mycard {
+  background-color: #62EDD6;
+
+}
+
+.nav-wrapper, .page-footer {
+  background-color: #FE65B7;
+}
+.thebody{
+  background-color: #E9C904;
+}
+h1 {
+  color: #FE65B7;
+}
+.card {
+    border: 10px dashed #8FC33A;
+}

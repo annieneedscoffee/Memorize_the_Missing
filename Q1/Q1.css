@@ -1,9 +1,14 @@
 * {
-  background-color: #40E0D0;
+  background-color: #40E0D0;;
+}
+
+.top, .explain {
+  background-color: #40E0D0;;
 }
 
 h1, h2 {
   text-align: center;
+  background-color: #40E0D0;
 }
 
 .box {
@@ -13,17 +18,45 @@ h1, h2 {
 
 #box1, #box4 {
   float:left;
+  border: 1px solid #40E0D0;
 }
 
 #box2, #box5, #box8 {
   border: 1px solid black;
   float: right;
 }
+.practice, .bottom{
+  padding-top: 20px;
+}
 
 button {
-  background-color: white;
+background-color: white;
+  border-radius: 25px;
+
 }
 
 a {
   background-color: white;
+}
+.topoftop{
+
+  background-color: #40E0D0;
+border-bottom: 10px solid 	#FFD700;
+
+}
+.footer{
+  height: 100px;
+}
+p{
+  margin: 10px;
+}
+footer{
+
+}
+.divider{
+  padding-top: 300px;
+
+}
+body{
+  border: 10px solid #FFD700;
 }
